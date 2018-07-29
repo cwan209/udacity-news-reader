@@ -73,9 +73,9 @@ $(function() {
               var menuIcon = $('.menu-icon-link');
 
               menuIcon.click();
-              expect($('body').hasClass('menu-hidden')).toBe(true);
-              menuIcon.click();
               expect($('body').hasClass('menu-hidden')).not.toBe(true);
+              menuIcon.click();
+              expect($('body').hasClass('menu-hidden')).toBe(true);
 
           });
 
